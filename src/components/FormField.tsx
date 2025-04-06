@@ -7,7 +7,7 @@ type PropsType = {
 
 const FormField: FC<PropsType> = ({ el }) => {
   return (
-    <div className="w-full grid justify-items-start">
+    <div className="min-w-full grid">
       <label className="grid gap-1">
         <span
           className="txt__2"
@@ -21,7 +21,7 @@ const FormField: FC<PropsType> = ({ el }) => {
         <input
           type={el?.type ?? "text"}
           placeholder={el.place}
-          className="w-full py-[12px] px-[16px] txt__3 border-2 rounded-[20px] outline-0"
+          className="min-w-full py-[12px] px-[16px] txt__3 border-2 rounded-[20px] outline-0"
           style={{
             color: "var(--gray__300)",
             borderColor: "var(--gray__200)",
