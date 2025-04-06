@@ -82,3 +82,13 @@ IMPORTANT: for some practical reasons i chose using snake case instead of kebab 
     transform: scale(1, 1);
   }
 }
+
+.mini_spinner {
+  animation: mini_spin 1s linear infinite;
+}
+
+@keyframes mini_spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
