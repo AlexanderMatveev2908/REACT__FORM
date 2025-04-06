@@ -2,8 +2,6 @@ import { img__0 } from "./assets";
 import Title from "./components/Title";
 import MainForm from "./common/Form/MainForm";
 
-// test
-
 const App = () => {
   return (
     <div
