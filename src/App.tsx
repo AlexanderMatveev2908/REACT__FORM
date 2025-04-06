@@ -19,11 +19,11 @@ const App = () => {
           <MainForm />
         </div>
         {/* RIGHT */}
-        <div className="grid place-items-center max-w-full rounded-lg overflow-hidden app__right min-h-full">
+        <div className="grid place-items-center max-w-full rounded-lg overflow-hidden app__right min-h-[858px] pt-10">
           <img
             src={img__0}
             alt="img__0"
-            className="w-full min-w-full min-h-full object-cover "
+            className="w-full min-w-full min-h-[858px] object-cover "
           />
         </div>
       </div>
