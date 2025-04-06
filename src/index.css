@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Inter";
+}
+
+/* 
+IMPORTANT: for some practical reasons i chose using snake case instead of kebab case in css naming, but only because i am working just myself on this project, if i would have been in a team i would been followed conventions of css or those one established by team  
+*/
+
+:root {
+  --yell__0: #ffd27a;
+  --yell__1: #ffc149;
+  --black: #2b2b2b;
+  --gray__50: #f8f8f8;
+  --gray__200: #abb4c7;
+  --gray__300: #667085;
+  --gray__400: #3a3a3a;
+}
+
+.txt__4 {
+  @apply text-[56px] leading-[56px] tracking-[1.5%] font-[700];
+}
+.txt__3 {
+  @apply text-[22px] leading-[30px];
+}
+.txt__2 {
+  @apply text-[16px] leading-[26px] font-[700];
+}
+.txt__1 {
+  @apply text-[16px] leading-[24px] font-[700];
+}
+.txt__0 {
+  @apply text-[14px] leading-[18px]  font-[700];
+}
+.txt__0,
+.txt__1,
+.txt__2,
+.txt__3 {
+  @apply tracking-[0];
+}
+
+.app__right {
+  display: none;
+}
+.app__container {
+  @apply grid-cols-1 px-5;
+}
+
+@media (min-width: 900px) {
+  .app__right {
+    display: flex;
+  }
+  .app__container {
+    @apply grid-cols-2 px-10;
+  }
+}
